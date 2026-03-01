@@ -3,8 +3,10 @@ class Plant:
         self.name = name
         self.height = start_height
         self.age = start_age
+
     def Output(self):
         print(f"Created: {self.name} ({self.height}cm, {self.age} days)")
+
 
 def main():
     names = ["Rose", "Oak", "Cactus", "Sunflower", "Fern"]
@@ -20,6 +22,7 @@ def main():
         new_plant.Output()
         my_plant.append(new_plant)
     print(f"Total plants created: {len(my_plant)}")
+
 
 if __name__ == "__main__":
     main()
