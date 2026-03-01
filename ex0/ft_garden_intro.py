@@ -6,6 +6,7 @@ def main():
     print("Plant:", name)
     print("Height:", height, "cm")
     print("Age:", age, "days")
+    print("=== End of Program ===")
 
 if __name__ == "__main__":
     main()
