@@ -1,14 +1,14 @@
 class Plant:
-    def __init__(self, name, start_height, start_age):
+    def __init__(self, name: str, start_height: int, start_age: int) -> None:
         self.name = name
         self.height = start_height
         self.age = start_age
 
-    def Output(self):
+    def Output(self) -> None:
         print(f"Created: {self.name} ({self.height}cm, {self.age} days)")
 
 
-def main():
+def main() -> None:
     names = ["Rose", "Oak", "Cactus", "Sunflower", "Fern"]
     heights = [25, 200, 5, 80, 15]
     ages = [30, 365, 90, 45, 120]
