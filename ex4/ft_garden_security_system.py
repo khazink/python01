@@ -13,7 +13,7 @@ class SecurePlant:
             print(f"Invalid operation attempted: height {height}cm [REJECTED]")
             print("Security: Negative height rejected")
 
-    def set_age(self, age: int) -> None
+    def set_age(self, age: int) -> None:
         if age > 0:
             self.__age = age
             print(f"Age updated: {self.__age} days [OK]")

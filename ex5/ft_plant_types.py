@@ -30,13 +30,15 @@ class Tree(Plant):
 
 
 class Vegetable(Plant):
-    def __init__(self, name: str, height: int, age: int, harvest_season: str, 
+    def __init__(self, name: str, height: int, age: int, harvest_season: str,
                  nutritional_value: str) -> None:
         super().__init__(name, height, age)
         self.harvest_season = harvest_season
         self.nutritional_value = nutritional_value
         print(f"{self.name} (Vegetable): {self.height}cm, {self.age} days, "
-             f"{harvest_season}")
+              f"{harvest_season}")
+
+    def describe_nutrition(self) -> None:
         print(f"{self.name} is rich in {self.nutritional_value}")
 
 
@@ -51,8 +53,10 @@ def main() -> None:
     walnut = Tree("Walnut", 1000, 3000, 100)
     walnut.produce_shade()
     tomato = Vegetable("Tomato", 80, 90, "summer", "vitamin C")
+    tomato.describe_nutrition()
     grape = Vegetable("Grape", 75, 56, "winter", "testosterone")
+    grape.describe_nutrition()
+
 
 if __name__ == "__main__":
     main()
-
